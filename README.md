@@ -1,6 +1,6 @@
-# WebAutomatedTestsBackend
+# TrelloWebAutomatedTestsFrontend
 
-# Automated Tests - WebAutomatedTestsBackend
+# Automated Tests - TrelloWebAutomatedTestsFrontend
 
 ## Table of Contents
 
@@ -10,10 +10,10 @@
 
 ## Cloning an automated test repository
 
-Clone the **WebAutomatedTestsBackend** repository:
+Clone the **TrelloWebAutomatedTestsFrontend** repository:
 
 ```bash
-git clone https://github.com/Wojtalo94/WebAutomatedTestsBackend.git
+git clone https://github.com/Wojtalo94/TrelloWebAutomatedTestsFrontend.git
 ```
 
 ## Preparation of the web application environment
