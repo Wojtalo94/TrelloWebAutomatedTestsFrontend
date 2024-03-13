@@ -1,0 +1,9 @@
+# YAML
+base_url: "https://trello.com/"
+browser: "chrome" # choose 'chrome' or 'firefox' or 'edge'
+
+# test settings
+max_wait: 8
+fullscreen: true
+incognito: false
+app_logs: false

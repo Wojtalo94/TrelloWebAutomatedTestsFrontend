@@ -1,0 +1,5 @@
+selenium==4.13.0
+requests==2.31.0
+behave==1.2.6
+webdriver_manager==4.0.1
+PyYAML==6.0.1
