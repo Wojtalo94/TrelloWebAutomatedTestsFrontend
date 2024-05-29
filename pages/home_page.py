@@ -1,12 +1,12 @@
 import logging
-from tools.config import MAX_WAIT
+from tools.config import MAX_WAIT, BASE_URL
 from tools.user_data import UserData
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class BasePage():
+class HomePage():
     _log_in_field = (By.CSS_SELECTOR, "a[data-uuid*='login']")
     _email_field = (By.CSS_SELECTOR, "input[id='username']")
     _submit_login_field = (By.CSS_SELECTOR, "button[id='login-submit']")
@@ -19,7 +19,11 @@ class BasePage():
         self.driver = driver
         self.ec = ec
         self.wait = WebDriverWait(driver, MAX_WAIT)
+        self.driver = driver
         self.user_data = UserData("tools/user_data.csv")
+
+    def open(self):
+        self.driver.get(BASE_URL)
 
     def click_log_in_button(self):
         self._logger.info("Click log in button")

@@ -7,3 +7,5 @@ max_wait: 8
 fullscreen: true
 incognito: false
 app_logs: false
+remote_mode: false
+headless: false

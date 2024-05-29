@@ -8,3 +8,5 @@ with open("tools/config.yml", "r") as file:
     INCOGNITO = config["incognito"]
     APP_LOGS = config["app_logs"]
     MAX_WAIT = config["max_wait"]
+    HEADLESS = config["headless"]
+    REMOTE_MODE = config["remote_mode"]
