@@ -3,5 +3,4 @@
 venv
 __pycache__/
 logs/
-.vscode/
 tools/user_data.csv
