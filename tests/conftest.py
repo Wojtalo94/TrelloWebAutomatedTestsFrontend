@@ -2,7 +2,7 @@ import pytest
 import logging
 from selenium import webdriver
 from tools.config import HEADLESS, FULLSCREEN, REMOTE_MODE, INCOGNITO, APP_LOGS
-from webdriver_manager.chrome import ChromeDriverManager
+#from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver import Remote
 from pages.home_page import HomePage
 
@@ -25,7 +25,10 @@ def driver(request):
 
 def local_chromedriver():
     options = chrome_options()
-    chrome_driver = webdriver.Chrome(service=webdriver.ChromeService(ChromeDriverManager().install()), options=options)
+    # below old not working code
+    # chrome_driver = webdriver.Chrome(service=webdriver.ChromeService(ChromeDriverManager().install()), options=options)
+    # below working code for webdriver in 4.0.2 version
+    chrome_driver = webdriver.Chrome(options=options)
     return chrome_driver
 
 
